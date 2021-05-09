@@ -23,6 +23,8 @@ micronaut {
 }
 
 dependencies {
+    annotationProcessor("io.micronaut.data:micronaut-data-processor")
+    compileOnly("jakarta.persistence:jakarta.persistence-api:2.2.2")
     kapt("io.micronaut.data:micronaut-data-processor")
     kapt("io.micronaut.openapi:micronaut-openapi")
     implementation("io.micronaut:micronaut-http-client")
@@ -41,6 +43,7 @@ dependencies {
     testImplementation("org.testcontainers:testcontainers")
     implementation("io.micronaut:micronaut-validation")
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
+    runtime("io.micronaut.sql:micronaut-jdbc-hikari")
 }
 
 

@@ -3,7 +3,7 @@ micronaut:
     name: mysqlApp
 datasources:
   default:
-    url: jdbc:mysql://localhost:3306/exampleDB
+    url: jdbc:mysql://mysqldb/userdb?autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true
     driverClassName: com.mysql.cj.jdbc.Driver
     username: root
     password: 'admin1234'

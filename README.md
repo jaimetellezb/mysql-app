@@ -15,4 +15,9 @@
   "address": "Cra 100"
   }'`
   
+- Crear imagen docker `docker build -t mysql-app .`
+- Correr imagen docker `docker run -d mysql-app`
+- Seguir guía https://www.javainuse.com/devOps/docker/docker-mysql
+
+1. 
 

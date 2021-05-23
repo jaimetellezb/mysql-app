@@ -3,10 +3,18 @@ micronaut:
     name: mysqlApp
 datasources:
   default:
-    url: jdbc:mysql://mysqldb/userdb?autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true
+    #url: jdbc:mysql://mysqldb/userdb?autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://localhost/exampleDB?autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true
     driverClassName: com.mysql.cj.jdbc.Driver
     username: root
     password: 'admin1234'
     schema-generate: none
     dialect: MYSQL
+
+aws:
+  s3:
+    accessKey: 'accessKey'
+    secretKey: 'secretKey'
+    region: 'us-west-1'
+    bucket: 'test'
 
